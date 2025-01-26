@@ -68,7 +68,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 For questions or support, feel free to reach out:
 - **Developer**: Abhishek
-- **GitHub**:(https://github.com/The-Tech-Forge)]
+- **GitHub**:(https://github.com/The-Tech-Forge)
 
 ---
 Thank you for using Fire Drop! If you encounter any issues or have suggestions for improvement, please don't hesitate to create an issue or reach out.
