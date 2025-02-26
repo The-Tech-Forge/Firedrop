@@ -1,5 +1,8 @@
 import 'package:firedrop/Screens/home.dart';
+import 'package:firedrop/Service/States/receive_state.dart';
+import 'package:firedrop/Service/States/send_state.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,15 +14,15 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MultiProvider(providers: [
+      ChangeNotifierProvider(create: (context)=>SendState()),
+      ChangeNotifierProvider(create: (context)=>ReceiveState()),
+    ],
+    child:  MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Fire Drop',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
       home: Home()
-    );
+    ),);
   }
 }
 

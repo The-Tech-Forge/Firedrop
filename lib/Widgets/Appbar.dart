@@ -22,7 +22,7 @@ class AppbarClass {
               children: [
                 SizedBox(width: 5),
                 Image.asset(
-                  'assets/logo.png',
+                  'assets/logo1.png',
                   height: 50,
                 ),
                 SizedBox(width: 10),
